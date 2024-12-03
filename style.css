@@ -1,5 +1,21 @@
+@font-face 
+{
+  font-family: "Futura";
+  src: url("Fuentes/Futura_ICG.ttf") format("truetype");
+}        
+
+@font-face 
+{ font-family: "DM Sans";
+  src: url("Fuentes/DMSans-Medium.ttf") format("truetype");
+}        
+        
+@font-face
+{
+  font-family: "Cocogoose";
+  src: url("Fuentes/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
@@ -17,9 +33,35 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header-logo img {
-  height: 40px;
-  width: auto;
+.header-logo img 
+{
+  height: 60px;
+}
+
+.header-logo
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.header-logo .nombre
+{
+  font-family: "Futura", sans-serif;
+  color: #ff4753;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.header-logo a
+{
+  text-decoration: none;
+}
+
+.header-logo a h1
+{
+  position: absolute;
+  top: 0px;
+  left: 80px;
 }
 
 .header-right img {
@@ -66,7 +108,8 @@ body {
   box-sizing: border-box;
 }
 
-.card img {
+.card img 
+{
   width: 100%;
   max-height: 60%;
   object-fit: cover;
@@ -74,32 +117,40 @@ body {
   margin-bottom: 15px;
 }
 
-.action-buttons {
+.action-buttons 
+{
   display: flex;
   justify-content: space-around;
   width: 100%;
   margin-top: 15px;
 }
 
-.action-button {
+.action-button
+{
   display: flex;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
+  background-color: white;
   border: none;
   border-radius: 20px;
   padding: 10px 15px;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
 
 .action-button:hover {
-  background-color: #e0e0e0;
+  border-color: #ff4753;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 71, 83, 0.5);
+  transition: 0.3s ease;
 }
 
-.action-button img {
-  width: 20px;
-  height: 20px;
+.action-button img 
+{
+  width: 50px;
   margin-right: 5px;
 }
 
