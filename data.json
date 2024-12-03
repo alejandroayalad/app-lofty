@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "name": "Bobby",
+      "species": "dog",
+      "age": "2 years",
+      "image": "https://res.cloudinary.com/devz9bjos/image/upload/v1733188372/bobby_bbkgxx.jpg",
+      "description": "A playful and friendly pup."
+    },
+    {
+      "id": 2,
+      "name": "Mittens",
+      "species": "cat",
+      "age": "3 years",
+      "image": "https://res.cloudinary.com/devz9bjos/image/upload/v1733188372/mittens_xnbuiu.jpg",
+      "description": "A cuddly and calm cat."
+    }
+  ]
