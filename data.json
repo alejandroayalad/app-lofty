@@ -2,17 +2,19 @@
     {
       "id": 1,
       "name": "Bobby",
-      "species": "dog",
-      "age": "2 years",
+      "species": "Perro",
+      "age": "2 años",
+      "vaccines": "rabia, parvovirus",
       "image": "https://res.cloudinary.com/devz9bjos/image/upload/v1733188372/bobby_bbkgxx.jpg",
-      "description": "A playful and friendly pup."
+      "description": "Un cachorro amigable y juguetón"
     },
     {
       "id": 2,
       "name": "Mittens",
-      "species": "cat",
-      "age": "3 years",
+      "species": "Gato",
+      "age": "3 años",
+      "vaccines": "ninguna",
       "image": "https://res.cloudinary.com/devz9bjos/image/upload/v1733188372/mittens_xnbuiu.jpg",
-      "description": "A cuddly and calm cat."
+      "description": "Un tranquilo y abrazable gato"
     }
   ]

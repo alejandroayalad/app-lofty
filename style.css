@@ -85,27 +85,47 @@ body {
 
 #card-container {
   width: 100%;
-  height: 450px;
+  height: 550px;
   position: relative;
   overflow: hidden;
   border: 1px solid #ddd;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: -1;
 }
 
-.card {
+.card 
+{
   position: absolute;
   width: 100%;
   height: 100%;
+  text-align: left;
   background-color: white;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
+  padding-top: 0;
   box-sizing: border-box;
+}
+
+.card h3
+{
+  font-family: "Cocogoose", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 150;
+  color: #ff4753;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.card p
+{
+  font-family: "DM Sans", sans-serif;
+  padding-left: 10px;
+  margin-top: 5px;
+  line-height: 1.5;
 }
 
 .card img 
@@ -114,15 +134,19 @@ body {
   max-height: 60%;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 15px;
+  border-color: black;
+  margin-top: 20px;
 }
 
 .action-buttons 
 {
+  position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   margin-top: 15px;
+  bottom: 50px;
+  z-index: 3;
 }
 
 .action-button
@@ -130,6 +154,7 @@ body {
   display: flex;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
+  margin-right: 15px;
   align-items: center;
   justify-content: center;
   background-color: white;
@@ -162,7 +187,15 @@ body {
   color: #F44336;
 }
 
-@media (max-width: 600px) {
+.errmess p
+{
+  font-family: "Cocogoose", sans-serif;
+  text-align: center;
+  color: #ff4753;
+}
+
+@media (max-width: 600px) 
+{
   .header-top {
     padding: 10px;
   }

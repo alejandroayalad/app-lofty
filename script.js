@@ -22,7 +22,7 @@ async function loadPets() {
 function displayCard() {
   if (currentIndex >= pets.length) {
    
-    cardContainer.innerHTML = '<p>No hay mascotas martín!!!</p>';
+    cardContainer.innerHTML = '<div class="errmess"><p>¡No quedan mascotas Martín!</p></div>';
     return;
   }
 
@@ -32,8 +32,7 @@ function displayCard() {
     <div class="card">
       <img src="${pet.image}" alt="${pet.name}">
       <h3>${pet.name}</h3>
-      <p>${pet.species}, ${pet.age}</p>
-      <p>${pet.description}</p>
+      <p>• ${pet.species} <br> • ${pet.age} <br> • Vacunas: ${pet.vaccines} <br> • ${pet.description}</p> 
     </div>
   `;
 }
