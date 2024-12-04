@@ -1,12 +1,16 @@
 const express = require('express');
 const fs = require('fs');
-
 const app = express();
 const PORT = process.env.PORT || 4010;
 
 app.use((_req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   next();
+});
+
+// Nueva ruta para la raíz
+app.get('/', (_req, res) => {
+  res.redirect('/api/pets');
 });
 
 app.get('/api/pets', (_req, res) => {
