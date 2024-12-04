@@ -1,0 +1,285 @@
+@font-face 
+{
+  font-family: "Futura";
+  src: url("Recursos/Fuentes/Futura_ICG.ttf") format("truetype");
+}        
+
+@font-face 
+{ font-family: "DM Sans";
+  src: url("Recursos/Fuentes/DMSans-Medium.ttf") format("truetype");
+}        
+        
+@font-face
+{
+  font-family: "Cocogoose";
+  src: url("Recursos/Fuentes/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
+}
+
+@keyframes abrirIzq
+{
+  from
+  {
+    transform: translateX(0)
+  }
+  to
+  {
+    transform: translateX(-100%);
+    display: none;
+  }
+}
+
+@keyframes abrirDer
+{
+  from
+  {
+    transform: translateX(0)
+  }
+  to
+  {
+    transform: translateX(100%);
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cortinaizq
+{
+  display: flex;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.cortinaizq img
+{
+  width: 50%;
+  height: 1307px;
+  animation: abrirIzq 2s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.cortinader
+{
+  display: flex;
+  right: 0;
+  position: absolute;
+  z-index: 10;
+  margin-left: 50%;
+}
+
+.cortinader img
+{
+  width: 100%;
+  height: 1307px;
+  animation: abrirDer 2s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo img 
+{
+  height: 60px;
+}
+
+.header-logo
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.header-logo .nombre
+{
+  font-family: "Futura", sans-serif;
+  color: #ff4753;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.header-logo a
+{
+  text-decoration: none;
+}
+
+.header-logo a h1
+{
+  position: absolute;
+  top: 0px;
+  left: 80px;
+}
+
+.header-right img {
+  height: 30px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.cuadradote
+{
+  background-color: white;
+}
+
+#app {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#card-container {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.card 
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 0;
+  box-sizing: border-box;
+}
+
+.card h3
+{
+  font-family: "Cocogoose", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 150;
+  color: #ff4753;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.card p
+{
+  font-family: "DM Sans", sans-serif;
+  padding-left: 10px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.card img 
+{
+  width: 100%;
+  max-height: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+  border-color: black;
+  margin-top: 20px;
+}
+
+.action-buttons 
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+  bottom: 50px;
+  z-index: 3;
+}
+
+.action-button
+{
+  position: relative;
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover 
+{
+  border-color: #ff4753;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 71, 83, 0.5);
+  transition: 0.3s ease;
+}
+
+.action-button img 
+{
+  width: 50px;
+  margin-right: 5px;
+}
+
+#like-button {
+  color: #4CAF50;
+}
+
+#dislike-button {
+  color: #F44336;
+}
+
+.errmess p
+{
+  font-family: "Cocogoose", sans-serif;
+  text-align: center;
+  color: #ff4753;
+}
+
+@media (max-width: 600px) 
+{
+  .header-top {
+    padding: 10px;
+  }
+
+  .header-logo img {
+    height: 30px;
+  }
+
+  .header-right img {
+    height: 25px;
+  }
+
+  #app {
+    padding: 10px;
+  }
+
+  #card-container {
+    height: 400px;
+  }
+}
