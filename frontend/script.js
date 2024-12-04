@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:4010/api/pets'; 
+const API_URL = 'https://app-lofty-9c44d4f31c3c.herokuapp.com/api/pets'; 
 
 let pets = [];
 let currentIndex = 0;
