@@ -1,17 +1,22 @@
 const express = require('express');
 const fs = require('fs');
+const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 4010;
+
 
 app.use((_req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   next();
 });
 
-// Nueva ruta para la raíz
+
+app.use(express.static(__dirname));
+
 app.get('/', (_req, res) => {
-  res.redirect('/api/pets');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
+
 
 app.get('/api/pets', (_req, res) => {
   fs.readFile('./data.json', 'utf-8', (err, data) => {
