@@ -32,7 +32,7 @@ function displayCard() {
     <div class="card">
       <img src="${pet.image}" alt="${pet.name}">
       <h3>${pet.name}</h3>
-      <p>• ${pet.species} <br> • ${pet.age} <br> • Vacunas: ${pet.vaccines} <br> • ${pet.description}</p> 
+      <p>• ${pet.species} <br> • ${pet.race} <br> • ${pet.age} <br> • Vacunas: ${pet.vaccines} <br> • ${pet.description}</p> 
     </div>
   `;
 }

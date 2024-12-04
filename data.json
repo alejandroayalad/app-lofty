@@ -3,8 +3,9 @@
       "id": 1,
       "name": "Bobby",
       "species": "Perro",
+      "race": "Pit Bull Terrier",
       "age": "2 años",
-      "vaccines": "rabia, parvovirus",
+      "vaccines": "rabia y parvovirus",
       "image": "https://res.cloudinary.com/devz9bjos/image/upload/v1733188372/bobby_bbkgxx.jpg",
       "description": "Un cachorro amigable y juguetón"
     },
@@ -12,9 +13,30 @@
       "id": 2,
       "name": "Mittens",
       "species": "Gato",
-      "age": "3 años",
+      "race": "Americano de pelo áspero",
+      "age": "8 meses",
       "vaccines": "ninguna",
       "image": "https://res.cloudinary.com/devz9bjos/image/upload/v1733188372/mittens_xnbuiu.jpg",
       "description": "Un tranquilo y abrazable gato"
+    },
+    {
+      "id": 3,
+      "name": "Nugget",
+      "species": "Gato",
+      "race": "Munchkin",
+      "age": "3 años",
+      "vaccines": "herpesvirus, calicivirus y panleucopenia",
+      "image": "https://res.cloudinary.com/dw9jt8ybg/image/upload/v1733271880/Nugget.webp",
+      "description": "Gato tranquilo, perezoso y algo torpe"
+    },
+    {
+      "id": 4,
+      "name": "Kiwi",
+      "species": "Perro",
+      "race": "Pit Bull",
+      "age": "4 meses",
+      "vaccines": "parvovirus y moquillo",
+      "image": "https://res.cloudinary.com/dw9jt8ybg/image/upload/v1733272413/Kiwi.avif",
+      "description": "Cachorro tierno y alegre. Muy comelón."
     }
   ]
