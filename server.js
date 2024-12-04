@@ -4,18 +4,13 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 4010;
 
-
 app.use((_req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   next();
 });
 
 
-app.use(express.static(__dirname));
-
-app.get('/', (_req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/api/pets', (_req, res) => {
@@ -26,6 +21,11 @@ app.get('/api/pets', (_req, res) => {
     }
     res.json(JSON.parse(data));
   });
+});
+
+
+app.get('*', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
