@@ -1,18 +1,18 @@
 @font-face 
 {
   font-family: "Futura";
-  src: url("../Recursos/Fuentes/Futura_ICG.ttf") format("truetype");
+  src: url("Recursos/Fuentes/Futura_ICG.ttf") format("truetype");
 }        
 
 @font-face 
 { font-family: "DM Sans";
-  src: url("../Recursos/Fuentes/DMSans-Medium.ttf") format("truetype");
+  src: url("Recursos/Fuentes/DMSans-Medium.ttf") format("truetype");
 }        
         
 @font-face
 {
   font-family: "Cocogoose";
-  src: url("../Recursos/Fuentes/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
+  src: url("Recursos/Fuentes/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
 }
 
 @keyframes abrirIzq
