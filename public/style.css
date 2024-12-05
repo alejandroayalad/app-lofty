@@ -130,6 +130,32 @@ body {
   border-radius: 50%;
 }
 
+.header-right
+{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.header-right img
+{
+  margin-left: 15px;
+}
+
+.likes a img
+{
+  width: 35px;
+  height: 35px;
+  margin-top: 3px;
+}
+
+.opcion1
+{
+  display: flex;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+}
+
 .cuadradote
 {
   background-color: white;
