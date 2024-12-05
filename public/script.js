@@ -22,7 +22,7 @@ async function loadPets() {
 function displayCard() {
   if (currentIndex >= pets.length) {
    
-    cardContainer.innerHTML = '<div class="errmess"><p>¡No quedan mascotas Martín!</p></div>';
+    cardContainer.innerHTML = '<div class="errmess"><p>¡No quedan más mascotas!</p></div>';
     return;
   }
 
